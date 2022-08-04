@@ -1,16 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&display=swap');
+
+body{
+   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,177,1) 100%);
+    color: white;
+    overflow-x: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+   font-family: 'Orbitron', sans-serif;
+    font-size: 10rem;
+}
+
+.div-heading{
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .grid{
     width: 200px;
     height: 400px;
-    background-color: yellow;
+    background-color: rgb(255, 0, 93);
     display: flex;
     flex-wrap: wrap;
     margin: 2rem;
+    box-sizing: content-box;
+    border-radius: 10px;
+    border: 3px white solid;
 }
 
 .grid div{
     height: 20px;
     width: 20px;
+    border-radius: 4px;
+    border: 0.4px rgb(255, 0, 93) solid;
     /* background: red; */
+}
+
+.taken{
+    border: none !important;
 }
 
 
@@ -19,22 +57,82 @@
 }
 
 .mini-grid{
-    width: 80px;
-    height: 80px;
+    border: white 3px solid;
+    width: 120px;
+    height: 140px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: orangered;
+     box-sizing: content-box;
+    border-radius: 10px;
 }
 
 .mini-grid div {
     height: 20px;
     width: 20px;
+    border: 0.4px orangered solid;
+    border-radius: 4px;
 }
 
 .container{
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 2.5rem; */
+    margin-top: 7rem;
+}
+
+
+.icon-center{
+    /* border: 2px red solid; */
+    display: flex;
+    width: 30rem;
+    justify-content: space-between;
+}
+
+.icon-container{
+
+    margin-top: 5rem;
+    /* border: 2px orangered solid; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.score{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
 
+#start-button{
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background: rgba(135, 45, 12, 0.349);
+    transition: all 0.2s ease-in;
+}
+
+
+#start-button:hover{
+box-shadow: -2px 0px 54px -11px rgba(0,0,0,0.67);
+-webkit-box-shadow: -2px 0px 54px -11px rgba(0,0,0,0.67);
+-moz-box-shadow: -2px 0px 54px -11px rgba(0,0,0,0.67);
+transform: scale(1.05);
+}
+
+.content{
+    background-image: url(./Images/wallpaperflare.com_wallpaper\ \(53\).jpg);
+    background-position: center;
+    background-size: center;
+    height: 100vh;
+    
+}

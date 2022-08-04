@@ -7,7 +7,7 @@ const width = 10;
 let nextRandom = 0;
 let timerId = null;
 let score = 0;
-const colors = ['orange', 'red', 'purple', 'green', 'blue'];
+const colors = ['yellow', '#0D4781', 'purple', '#3A86FF', '#F7EDE2'];
 
 // // The Tetrominoes: 
 
@@ -182,17 +182,17 @@ function rotate(){
 // Show up-next tetromino in mini-grid display: 
 
 const displaySquares = document.querySelectorAll('.mini-grid div');
-const displayWidth = 4;
+const displayWidth = 6;
 let displayIndex = 0;
 
 // theTetrominos without rotation
 
 const upNextTetrominoes = [
-    [1, displayWidth+1, displayWidth*2+1, 2], // Ltetromino
-    [0, displayWidth, displayWidth+1, displayWidth*2+1], // zTetromino
-    [1, displayWidth, displayWidth+1, displayWidth+2], // tTetromino
-    [0, 1, displayWidth, displayWidth+1], // oTetromino
-    [1, displayWidth+1, displayWidth*2+1, displayWidth*3+1] // iTetromino
+    [15, 21,26, 27], // Ltetromino
+    [14, 20, 21, 27], // zTetromino
+    [14, 20, 21, 26], // tTetromino
+    [14, 15, 20, 21], // oTetromino
+    [19, 20, 21, 22] // iTetromino
 ]
 
 // Display the shape in the mini-grid display:
